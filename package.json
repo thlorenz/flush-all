@@ -1,0 +1,36 @@
+{
+  "name": "flush-all",
+  "version": "0.0.0",
+  "description": "Flushes all open buffers in your Node.js app.",
+  "main": "flush-all",
+  "scripts": {
+    "test": "nave use 0.11 node-gyp rebuild && nave use 0.11 node --perf-basic-prof ./test/flush-all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thlorenz/flush-all.git"
+  },
+  "homepage": "https://github.com/thlorenz/flush-all",
+  "dependencies": {
+    "nad-bindings": "~0.2.0",
+    "nan": "~1.4.1"
+  },
+  "devDependencies": {
+    "nave": "~0.4.5",
+    "node-gyp": "~1.0.2",
+    "tap": "~0.4.3"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Thorsten Lorenz",
+    "email": "thlorenz@gmx.de",
+    "url": "http://thlorenz.com"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/thlorenz/flush-all/blob/master/LICENSE"
+  },
+  "engine": {
+    "node": ">=0.8"
+  }
+}
