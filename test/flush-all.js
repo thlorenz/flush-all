@@ -7,10 +7,6 @@ var test = require('tap').test
   , fs = require('fs')
   , flushAll = require('../')
 
-function inspect(obj, depth) {
-  console.error(require('util').inspect(obj, false, depth || 5, true));
-}
-
 test('\nflushing will cause perf file to be flushed', function (t) {
   var stat;
   var pid = process.pid;
@@ -24,7 +20,7 @@ test('\nflushing will cause perf file to be flushed', function (t) {
   flushAll();
 
   stat = fs.statSync(mapFile);
-  t.notEqual(stat.size, 0, 'after I flush all, the map file size is no longer 0 since it has been')
+  t.notEqual(stat.size, 0, 'after I flush all, the map file size is no longer 0 since it has been flushed')
 
   t.end()
 })
