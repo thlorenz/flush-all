@@ -9,6 +9,12 @@
         'include_dirs': [
           '<!(node -e "require(\'nan\')")',
       ],
+      'conditions': [
+        [ "OS == 'linux'" , {
+          'cflags!': [ '-fno-tree-vrp', '-fno-tree-sink' ]
+          }
+        ]
+      ]
     }
   ]
 }
