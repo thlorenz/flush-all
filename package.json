@@ -12,7 +12,7 @@
   },
   "homepage": "https://github.com/thlorenz/flush-all",
   "dependencies": {
-    "nad-bindings": "~0.2.0",
+    "bindings": "^1.2.1",
     "nan": "~1.4.1"
   },
   "devDependencies": {

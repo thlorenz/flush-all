@@ -1,7 +1,7 @@
 'use strict';
 
-var binding = require('nad-bindings')('flush_all');
+var bindings = require('bindings')('flush_all');
 
 var go = module.exports = function flushAll() {
-  binding.flush_all();    
+  bindings.flush_all();    
 }
