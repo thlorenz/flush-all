@@ -30,7 +30,7 @@ test('\nflushing will cause perf file to be flushed', function (t) {
   // However since Linux flushes more aggressively this is as good as we can do there.
   // On darwin, we can show that before flushAll nothing got flushed and afterwards it did which is the 
   // actual proof that this works.
-  t.ok(stat.siz > firstSize, 'after I flush all, the map file size is larger than before and non-zero since has been flushed')
+  t.ok(stat.size > firstSize, 'after I flush all, the map file size is larger than before and non-zero since has been flushed')
 
   console.log('size before flushAll()', firstSize);
   console.log('size after  flushAll()', stat.size);
