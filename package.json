@@ -1,6 +1,6 @@
 {
   "name": "flush-all",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Flushes all open buffers in your Node.js app.",
   "main": "flush-all",
   "scripts": {
