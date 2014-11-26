@@ -14,3 +14,7 @@ results
 npm-debug.log
 node_modules
 build
+.clang_complete
+.syntastic_c
+.travis.yml
+.gitignore
