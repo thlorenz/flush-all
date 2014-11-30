@@ -4,7 +4,8 @@
   "description": "Flushes all open buffers in your Node.js app.",
   "main": "flush-all",
   "scripts": {
-    "test": "nave use 0.11 node-gyp rebuild && nave use 0.11 node --perf-basic-prof ./test/flush-all.js"
+    "test": "nave use 0.11 node-gyp rebuild && nave use 0.11 node --perf-basic-prof ./test/flush-all.js",
+    "test-13": "echo 'expects node-v0.13 to be checked out at ./node-v0.13' && export PATH=`pwd`/node-v0.13:$PATH && node-gyp rebuild --nodedir ./node-v0.13 && node --perf-basic-prof ./test/flush-all.js"
   },
   "repository": {
     "type": "git",

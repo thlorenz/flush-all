@@ -8,6 +8,13 @@ var test = require('tap').test
   , os = require('os')
   , flushAll = require('../')
 
+function inspect(obj, depth) {
+  console.error(require('util').inspect(obj, false, depth || 5, true));
+}
+
+inspect(process.config)
+inspect(process.versions)
+
 test('\nflushing will cause perf file to be flushed', function (t) {
   var stat;
   var pid = process.pid;
